@@ -16,6 +16,11 @@ import streamlit as st
 
 from utils.palette import CHART_SEQ, PLOT_GRID, PLOT_INK, PLOT_MUTED
 
+# موضع RankWarning تغيّر في numpy 2.0 — ندعم الإصدارين معاً
+_RANK_WARNING = getattr(
+    getattr(np, "exceptions", np), "RankWarning", RuntimeWarning
+)
+
 FONT = "Cairo, Segoe UI, sans-serif"
 MONO = "JetBrains Mono, monospace"
 
@@ -427,7 +432,8 @@ def overfitting_anim() -> go.Figure:
     # الدرجات العالية سيّئة التكييف عمداً — هذا هو بيت القصيد في الرسم،
     # فنكتم تحذير numpy حتى لا يُلوّث سجلّ التشغيل.
     with warnings.catch_warnings():
-        warnings.simplefilter("ignore", np.exceptions.RankWarning)
+        # numpy ≥ 2.0 ينقل RankWarning إلى np.exceptions
+        warnings.simplefilter("ignore", _RANK_WARNING)
         _fit = lambda d: np.polyfit(x, y, d)  # noqa: E731
         coefs = {d: _fit(d) for d in degrees}
     for d in degrees:
