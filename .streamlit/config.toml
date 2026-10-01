@@ -1,0 +1,72 @@
+# ============================================================
+#  منصة مفاهيم الذكاء الاصطناعي للباحثين
+#  Theme — light, multi-accent, RTL
+#  Dr Merwan Roudane
+# ============================================================
+
+[theme]
+base = "light"
+
+primaryColor             = "#5B6BE1"
+backgroundColor          = "#FFFFFF"
+secondaryBackgroundColor = "#F5F7FD"
+textColor                = "#1E2749"
+linkColor                = "#3F51C8"
+borderColor              = "#E0E6F4"
+
+codeBackgroundColor = "#F3F6FE"
+codeTextColor       = "#2B3A99"
+
+dataframeBorderColor           = "#E0E6F4"
+dataframeHeaderBackgroundColor = "#EDF1FC"
+
+# Semantic palette — deliberately varied, all light-safe
+redColor    = "#D6455F"
+orangeColor = "#E0832A"
+yellowColor = "#C9A008"
+greenColor  = "#1F9A63"
+blueColor   = "#2E9BD6"
+violetColor = "#8257D8"
+grayColor   = "#64748B"
+
+# Charts — a wide, varied categorical set
+chartCategoricalColors = [
+  "#5B6BE1", "#17A074", "#E0832A", "#D9527E",
+  "#2E9BD6", "#8257D8", "#C9A008", "#0E9BA8",
+  "#2E9E4F", "#C3449B",
+]
+chartSequentialColors = [
+  "#F4F7FE", "#E2E8FC", "#C8D3F8", "#AABCF3", "#8CA2EC",
+  "#6E88E4", "#5B6BE1", "#4453BE", "#333F96", "#242C6B",
+]
+
+font        = "Cairo:https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap"
+headingFont = "Cairo:https://fonts.googleapis.com/css2?family=Cairo:wght@600;700;800;900&display=swap"
+codeFont    = "'JetBrains Mono':https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap"
+
+baseFontSize   = 17
+baseFontWeight = 400
+codeFontSize   = "0.86rem"
+
+headingFontSizes   = ["2.3rem", "1.8rem", "1.42rem", "1.18rem", "1.04rem", "0.95rem"]
+headingFontWeights = [800, 800, 700, 700, 600, 600]
+linkUnderline      = false
+
+baseRadius        = "14px"
+buttonRadius      = "11px"
+showWidgetBorder  = true
+showSidebarBorder = true
+
+[theme.sidebar]
+backgroundColor          = "#F2F5FE"
+secondaryBackgroundColor = "#E5EBFB"
+codeBackgroundColor      = "#E5EBFB"
+textColor                = "#1E2749"
+borderColor              = "#D7DFF4"
+primaryColor             = "#3F51C8"
+
+[server]
+runOnSave = true
+
+[browser]
+gatherUsageStats = false

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="250" height="40" viewBox="0 0 250 40" font-family="Cairo, 'Segoe UI', Tahoma, sans-serif">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#5B6BE1"/>
+      <stop offset="52%" stop-color="#8257D8"/>
+      <stop offset="100%" stop-color="#C3449B"/>
+    </linearGradient>
+  </defs>
+
+  <!-- badge -->
+  <rect x="216" y="4" width="32" height="32" rx="10" fill="url(#g)"/>
+  <g stroke="#ffffff" stroke-width="1.5" fill="#ffffff" opacity="0.96">
+    <line x1="224" y1="13" x2="232" y2="20"/>
+    <line x1="224" y1="27" x2="232" y2="20"/>
+    <line x1="232" y1="20" x2="240" y2="14"/>
+    <line x1="232" y1="20" x2="240" y2="26"/>
+    <circle cx="224" cy="13" r="2.4"/>
+    <circle cx="224" cy="27" r="2.4"/>
+    <circle cx="232" cy="20" r="2.9"/>
+    <circle cx="240" cy="14" r="2.4"/>
+    <circle cx="240" cy="26" r="2.4"/>
+  </g>
+
+  <!-- wordmark (RTL) -->
+  <text x="209" y="19" text-anchor="end" direction="rtl"
+        font-size="15" font-weight="800" fill="#2C3692">مفاهيم الذكاء الاصطناعي</text>
+  <text x="209" y="33" text-anchor="end" direction="rtl"
+        font-size="10.5" font-weight="600" fill="#8089A8">للباحثين · من الصفر</text>
+</svg>
